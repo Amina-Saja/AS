@@ -1,4 +1,18 @@
 body{
-    background-color: rgb(0, 187, 140);
+    background-color: rgb(191, 255, 239);
     text-align: center;  
 } 
+
+#heading{
+    color:rgb(233, 248, 240);   
+}
+
+.div {   
+    padding: 15px;
+    background-color: rgb(0, 107, 121);  
+    width: 300px ;
+    align-items: center;
+}   
+.ab{
+    background-color: rgb(248, 213, 222);
+}
