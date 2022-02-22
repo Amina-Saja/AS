@@ -1,6 +1,8 @@
 body{
     background-color: rgb(191, 255, 239);
-    text-align: center;  
+    text-align: center;
+    align-content: center;
+    padding: 500px;
 } 
 
 #heading{
@@ -8,11 +10,14 @@ body{
 }
 
 .div {   
+    font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 15px;
     background-color: rgb(0, 107, 121);  
     width: 300px ;
     align-items: center;
+  
 }   
 .ab{
     background-color: rgb(248, 213, 222);
 }
+
