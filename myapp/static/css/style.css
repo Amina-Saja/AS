@@ -2,7 +2,8 @@ body{
     background-color: rgb(191, 255, 239);
     text-align: center;
     align-content: center;
-    padding: 500px;
+    padding: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 } 
 
 #heading{
@@ -10,10 +11,10 @@ body{
 }
 
 .div {   
-    font-family: Georgia, 'Times New Roman', Times, serif;
+
     padding: 15px;
     background-color: rgb(0, 107, 121);  
-    width: 300px ;
+    /* width: 300px ; */
     align-items: center;
   
 }   
