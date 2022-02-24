@@ -1,1 +1,1 @@
-document.write("blablablabla")
+// document.write("blablablabla")
