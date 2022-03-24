@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><center>
+    <form action="/admin/" method="post">
+        {% csrf_token %}
+        <h1>Admin Home</h1>
+        <div align="right"><input type="button" value="Logout"></div>
+        <br><table border="1">
+            <tr>
+                <th>Employee id</th>
+                <th>Name</th>
+                <th>Place</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Delete</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><input type="button" value="delete"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><input type="button" value="delete"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><input type="button" value="delete"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><input type="button" value="delete"></td>
+            </tr>
+        </table>
+    </form>
+</center>
+</body>
+</html>

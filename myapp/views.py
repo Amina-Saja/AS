@@ -10,22 +10,54 @@ def sign(request):
 def home(request):
     return render(request,'home.html')
 
+def index(request):
+    return render(request,'index.html')
+
+def register(request):
+    return render(request,'register.html')
+
+def cologin(request):
+    return render(request,'cologin.html')
+    
+def admin(request):
+    return render(request,'admin.html')
+
+def emp(request):
+    return render(request,'emp.html')
+
 def sign(request):
     return render(request,'sign.html')
+
+def register(request):
+    if request.method == "POST":
+        name=request.POST['name']
+        place=request.POST['place']
+        email=request.POST['email']
+        address=request.POST['address']
+        username=request.POST['username']
+        password=request.POST['password']
+        confirmpassword=request.POST['confirm']
+        userdata= users(name=name,place=place,email=email, address=address,username=username,password=password,confirmpassword=confirmpassword)
+        userdata.save()
+        return render(request,'register.html')
+    else:
+        return render(request,'register.html')
 
 def signin(request):
     if request.method == "POST":
         name=request.POST['name']
+        place=request.POST['place']
         email=request.POST['email']
-        phone=request.POST['phone']
-        username=request.POST['user']
-        password=request.POST['psw']
-        userdata= users(name=name,email=email,phone=phone,username=username,password=password)
+        address=request.POST['address']
+        username=request.POST['username']
+        password=request.POST['password']
+        confirm=request.POST['confirm']
+        userdata= users(name=name,place=place,email=email, address=address,username=username,password=password,confirm=confirm)
         userdata.save()
-        return render(request,'sign.html')
+        return render(request,'register.html')
     else:
-        return render(request,'sign.html')
-
+        return render(request,'register.html')
+        
 def login(request):
     if request.method == "POST":
         username=request.POST['user']
